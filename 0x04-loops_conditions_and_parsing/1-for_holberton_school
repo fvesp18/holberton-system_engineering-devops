@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times in a for loop
+# This script is displaying "Holberton School"
 for i in {0..9}
 do
 	echo "Holberton School"
