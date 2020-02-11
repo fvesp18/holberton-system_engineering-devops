@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Creates an indefinite loop over a sleep period of 2 sec
 echo $BASHPID > /var/run/holbertonscript.pid
-trap "rm -f /var/run/holbertonscript.pid; echo I hate the kill command; exit" 15;
-trap "rm -f /var/run/holbertonscript.pid; echo Y U no love me?!" 2
 while :
 do 
 	echo To infinity and beyond
 	sleep 2
+	trap "rm -f /var/run/holbertonscript.pid; echo I hate the kill command; exit" 15;
+	trap "rm -f /var/run/holbertonscript.pid; echo Y U no love me?!" 2
 done
