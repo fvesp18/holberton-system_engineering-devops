@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School"
-for i in {0..9}
+i=0
+while [ $i -lt 10 ]
 do
 	if [ $i -eq 8 ]
 	then
