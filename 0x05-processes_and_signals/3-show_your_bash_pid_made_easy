@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays lines containing word bash and pid of said command
+# shellcheck disable=SC2009
+pgrep -l "bash"
