@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Fizzbuzz
+a=Fizz
+b=Buzz
+c=FizzBuzz
+i=0
+while (( i <= 100 ))
+do
+	if (( i % 15 == 0 ))
+	then
+		echo $c
+	elif (( i % 5 == 0 ))
+	then
+		echo $b
+	elif (( i % 3 == 0 ))
+	then
+		echo $a
+	else
+		echo $i
+	fi
+	((i++))
+done
