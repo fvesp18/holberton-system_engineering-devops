@@ -18,5 +18,9 @@ do
 	else
 		echo $i
 	fi
+	if (( i == 100 ))
+	then
+		echo $i
+	fi
 	((i++))
 done
