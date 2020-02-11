@@ -3,7 +3,7 @@
 a=Fizz
 b=Buzz
 c=FizzBuzz
-i=0
+i=1
 while (( i <= 100 ))
 do
 	if (( i % 15 == 0 ))
