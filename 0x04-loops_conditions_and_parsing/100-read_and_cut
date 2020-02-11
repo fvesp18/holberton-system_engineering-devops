@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Reads dir /etc/shadow and cuts by name
+while read pass
+do
+	echo $pass | cut -d: -f1,3,6
+done < /etc/passwd
