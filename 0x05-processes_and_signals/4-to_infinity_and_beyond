@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Creates an indefinite loop over a sleep period of 2 sec
+while [ : ]
+do 
+	echo To infinity and beyond
+	sleep 2
+done
