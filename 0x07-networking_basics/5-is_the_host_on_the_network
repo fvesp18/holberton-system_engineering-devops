@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo ping -c 5 $1
