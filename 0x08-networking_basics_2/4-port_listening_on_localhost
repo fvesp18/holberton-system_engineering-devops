@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# TAKE 3
+nc -l 98
