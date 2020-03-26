@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Redirects error page to a specific site
+sudo apt-get -y upgrade
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/index.html > /dev/null
+sudo sed -i '/^\sserver_name.*/a \        error_page 404 /custom_404.html;' /etc/nginx/sites-available/default
+sudo service nginx start
