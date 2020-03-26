@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Access ssh with ubuntu@ipaddress
+ssh -F ~/.ssh/holberton ubuntu@104.196.146.115
