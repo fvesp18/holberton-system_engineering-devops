@@ -2,5 +2,5 @@
 # Installs nginx web server
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo echo 'Holberton School' | sudo tee /var/www/html/index.html > /dev/null
+echo 'Holberton School' | sudo tee /var/www/html/index.html > /dev/null
 sudo service nginx start
