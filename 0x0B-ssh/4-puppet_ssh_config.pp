@@ -8,6 +8,6 @@ file_line {
 ;
 'Key Location',
   ensure => present,
-  path   => '~/.ssh/holberton'
+  path   => '/etc/ssh/ssh_config',
   line   => 'IdentityFile ~/.ssh/holberton'
 }
