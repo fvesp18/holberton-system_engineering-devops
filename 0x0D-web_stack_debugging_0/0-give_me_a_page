@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Reloads apache2 server to serve latests files
+sudo service apache2 restart
