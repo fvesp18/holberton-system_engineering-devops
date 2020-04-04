@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Installs nginx web server
+# shellcheck disable=SC2154
 sudo apt-get -y upgrade
 sudo apt-get -y update
 sudo apt-get -y install nginx
