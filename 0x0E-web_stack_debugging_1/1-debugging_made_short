@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Allows port 80 to serve
+# Debugging without a running servere
 sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default > /var/run/nginx.pid 
 sudo service nginx restart
