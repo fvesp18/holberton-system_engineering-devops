@@ -4,13 +4,14 @@ sudo apt-get -y install software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-1.8
 sudo apt-get -y update
 sudo apt-get -y install haproxy=1.8.\*
-sudo service haproxy start
 sudo sed -i "\$a\ENABLED=1" /etc/default/haproxy
 sudo sed -i "\$a\frontend www" /etc/haproxy/haproxy.cfg
-sudo sed -i "\$a\        bind *:80" /etc/haproxy/haproxy.cfg
+sudo sed -i "\$a\        bind 0.0.0.0:80" /etc/haproxy/haproxy.cfg
+sudo sed -i "\$a\        mode http" /etc/haproxy/haproxy.cfg 
 sudo sed -i "\$a\        default_backend back" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\backend back" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\        balance roundrobin" /etc/haproxy/haproxy.cfg
+sudo sed -i "\$a\        mode http" /etc/haproxy/haproxy.cfg 
 sudo sed -i "\$a\        server 1081-web-01 34.73.242.144:80 check" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\        server 1081-web-01 34.73.242.144:80 check" /etc/haproxy/haproxy.cfg
-sudo service haproxy reload
+sudo service haproxy start
