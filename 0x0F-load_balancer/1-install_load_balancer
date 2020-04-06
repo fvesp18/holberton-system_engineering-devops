@@ -12,6 +12,6 @@ sudo sed -i "\$a\        default_backend back" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\backend back" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\        balance roundrobin" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\        mode http" /etc/haproxy/haproxy.cfg 
-sudo sed -i "\$a\        server 1081-web-01 34.73.242.144:80 check" /etc/haproxy/haproxy.cfg
-sudo sed -i "\$a\        server 1081-web-01 34.73.242.144:80 check" /etc/haproxy/haproxy.cfg
+sudo sed -i "\$a\        server 1081-web-01 34.73.242.144:80" /etc/haproxy/haproxy.cfg
+sudo sed -i "\$a\        server 1081-web-02 54.242.185.27:80" /etc/haproxy/haproxy.cfg
 sudo service haproxy start
