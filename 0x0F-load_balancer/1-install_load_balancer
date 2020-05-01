@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Installs and sets up HAProxy load balacer
 sudo apt-get -y update
-sudo apt-get -y install haproxy=1.8.\*
+sudo apt-get -y install haproxy=1.6.\*
 sudo sed -i "\$a\ENABLED=1" /etc/default/haproxy
 sudo sed -i "\$a\frontend www" /etc/haproxy/haproxy.cfg
 sudo sed -i "\$a\        bind 0.0.0.0:80" /etc/haproxy/haproxy.cfg
