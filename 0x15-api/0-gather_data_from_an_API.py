@@ -24,7 +24,7 @@ if __name__ == "__main__":
             comp_tasks += 1
 
     # Format data and print
-    print("Employee {} is done with ({}/{}):".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         emp_name, comp_tasks, total_tasks))
     for tasks in todo:
         if tasks.get('completed'):
