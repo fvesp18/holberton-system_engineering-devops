@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script will make request to website and format response """"
+""" Script will make request to website and format response """
 if __name__ == "__main__":
     import json
     import requests
