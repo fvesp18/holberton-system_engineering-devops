@@ -23,4 +23,4 @@ if __name__ == "__main__":
         emp_name, comp_tasks, total_tasks))
     for tasks in todo:
         if tasks.get('completed'):
-            print("\t{}".format(tasks.get('title')))
+            print("\t {}".format(tasks.get('title')))
