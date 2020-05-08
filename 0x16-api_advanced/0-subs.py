@@ -3,6 +3,7 @@
 import json
 import requests
 
+
 def number_of_subscribers(subreddit):
     end = "https://reddit.com/r/{}/about.json".format(
                             subreddit)
