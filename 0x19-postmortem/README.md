@@ -1,3 +1,4 @@
+!(https://imgur.com/sZKFOGo)
 LEAD UP
 From the time of 13:44 and 18:29 on the date of the 20th of August 2012, an error in the configuration file of the server appeared as a typo, calling a file using the wrong suffix. This caused the web page to load an error 400 page upon trying to access the site.
 
@@ -8,7 +9,7 @@ IMPACT
 The method used to solve the issue was to find the file that was misprinted, locate the correct file name, and swap the strings out completely. This allowed us to run our server without unwanted 400 responses. 
 
 DETECTION
-The main bug in this report is a failure to load the appropriate resources needed to load the web server, which was identified by a misspelled file. An initial method was implemented by the use of tmux and strace to help identify the error. However, upon being faced with a stream of information (sometimes there’s a huge amount of information to parse and could take time to go through), the decision was made to try and google “common 400 errors wordpress response issues.” A few StackOverflow threads later and the consensus was to first look at the server logs, then, try to locate the configuration file. After finding the error, (THREE HOURS LATER), the line 98 had a misspelled file causing the server to crash.
+The main bug in this report is a failure to load the appropriate resources needed to load the web server, which was identified by a misspelled file. An initial method was implemented by the use of tmux and strace to help identify the error. However, upon being faced with a stream of information (sometimes there’s a huge amount of information to parse and could take time to go through), the decision was made to try and to google “common 400 errors wordpress response issues.” A few StackOverflow threads later and the consensus was to first look at the server logs, like any other respectable programmer out there. After finding the error, (THREE HOURS LATER), the line 98 had a misspelled file causing the server to crash.
 
 RESPONSE
 The issue was identified using Google. The query implemented was "common 400 wordpress response issues." Upon loading, multiple sources suggested looking into the configuration file. This file contains most of the resources and implementations necessary to run a web server. A sed command was used to find the typo and replace it using a simple regex expression!
